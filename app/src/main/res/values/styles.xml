@@ -8,4 +8,20 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="EditText.PraiaBH.SignUp" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/bg_edit_text_rounded</item>
+        <item name="android:backgroundTint">#FBEEFF</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:lines">1</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textColorHint">#99879D</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
 </resources>

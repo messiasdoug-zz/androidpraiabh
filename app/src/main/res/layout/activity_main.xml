@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_onboarding_screen"
     tools:context=".MainActivity">
 
     <View
@@ -11,9 +12,9 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="102dp"
+        android:layout_marginBottom="68dp"
         android:background="@drawable/bg_bordered_rounded"
         app:layout_constraintBottom_toTopOf="@id/signUp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,55 +26,67 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:fontFamily="@font/red_hat_display_medium"
+        android:shadowColor="#40000000"
         android:text="@string/sign_up"
+        android:textColor="#120E21"
+        android:textSize="27sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@id/bgSignUp" />
 
     <EditText
         android:id="@+id/firstName"
-        android:layout_width="match_parent"
+        style="@style/EditText.PraiaBH.SignUp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="24dp"
         android:hint="@string/first_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@id/bgSignUp"
+        app:layout_constraintStart_toStartOf="@id/bgSignUp"
         app:layout_constraintTop_toBottomOf="@id/signUpTitle" />
 
     <EditText
         android:id="@+id/lastName"
+        style="@style/EditText.PraiaBH.SignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="40dp"
         android:hint="@string/last_name"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/firstName" />
 
     <EditText
         android:id="@+id/email"
+        style="@style/EditText.PraiaBH.SignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="40dp"
         android:hint="@string/email"
+        android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lastName" />
 
     <EditText
         android:id="@+id/password"
+        style="@style/EditText.PraiaBH.SignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="40dp"
         android:hint="@string/password"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/email" />
@@ -83,16 +96,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="134dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="56dp"
+        android:background="@drawable/bg_button_rounded"
+        android:backgroundTint="#9378FF"
         android:text="@string/sign_up"
         android:textAllCaps="false"
+        android:textColor="#FFFFFF"
         app:layout_constraintTop_toBottomOf="@id/password" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
         android:text="@string/you_have_an_account_log_in"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
